@@ -1,0 +1,1 @@
+docker build . --file Dockerfile --tag fede-work:$(date +%s) --tag fede-work:latest
