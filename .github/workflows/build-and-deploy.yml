@@ -1,0 +1,13 @@
+name: Build & Deploy
+on:
+  push:
+    branches: ["main"]
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the Docker image
+        run: ./build.sh
+      - name: Deploy the image to Swarm
+        run: ./deploy.sh
