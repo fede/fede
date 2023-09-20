@@ -1,5 +1,6 @@
 import type { GatsbyConfig } from "gatsby";
 
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Fede Ratier`,
@@ -16,20 +17,28 @@ const config: GatsbyConfig = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "images",
+      "path": "./src/images/"
+    },
+    __key: "images"
+  },
+  {
+ resolve: 'gatsby-plugin-manifest',
+ options: {
+    icon: 'src/images/memoji.png'
+ }
+},
+
+  {
+    resolve: `gatsby-plugin-s3`,
+    options: {
+      bucketName: "fede.work",
+    },
+  },]
 };
 
 export default config;
-
-//{
-//  resolve: 'gatsby-plugin-manifest',
-//  options: {}
-//}
-// {
-//   resolve: 'gatsby-source-filesystem',
-//   options: {
-//     "name": "images",
-//     "path": "./src/images/"
-//   },
-//   __key: "images"
-// }
