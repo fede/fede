@@ -1,9 +1,5 @@
-### Hi! Hola! Hej!
+### HI, I'M FEDE!
 
-👨‍💻 I'm a Tech Lead and Engineering Manager currently working for SAS Scandinavian Airlines, previously for Klarna and Flybondi Airlines.
+I'm an Engineering Manager & Technical Lead. I have been working in product teams for several years, leading talented engineers and designers to build products that people love. I am passionate about building high-performing and diverse teams and helping people grow.
 
-Some quick links:
-
-- Professional profile at [LinkedIn](https://www.linkedin.com/in/federatier/)
-- Personal website at [fede.work](https://fede.work)
-- My dog 🐶 in [Instagram](https://instagram.com/federatier) 🤷‍♂️
+You can see this repo's website at [fede.work](https://fede.work), or check my [LinkedIn](https://www.linkedin.com/in/federatier/).
