@@ -1,12 +1,13 @@
-import type { MetaFunction } from '@remix-run/node';
+import type { MetaFunction } from '@remix-run/node'
 import {
   ExperienceCard,
   ExperienceDescription,
-} from '~/components/ExperienceCard';
-import { TitleH2 } from '~/components/Title';
-import { ContactMe } from '~/components/ContactMe';
-import Header from '~/components/Header';
-import Main from '~/components/Main';
+} from '~/components/ExperienceCard'
+import { TitleH2 } from '~/components/Title'
+import { ContactMe } from '~/components/ContactMe'
+import Header from '~/components/Header'
+import Main from '~/components/Main'
+import SillyThings from '~/components/SillyThings'
 
 export const meta: MetaFunction = () => {
   return [
@@ -15,8 +16,8 @@ export const meta: MetaFunction = () => {
       name: 'description',
       content: "Hi! I'm Fede, engineer manager and tech lead.",
     },
-  ];
-};
+  ]
+}
 
 function HeaderTitle() {
   return (
@@ -32,7 +33,7 @@ function HeaderTitle() {
         <span className="text-sm text-zinc-500">by night</span>
       </div>
     </>
-  );
+  )
 }
 
 const description = `I'm an Engineering Manager & Technical Lead during daytime Sound
@@ -40,7 +41,7 @@ const description = `I'm an Engineering Manager & Technical Lead during daytime 
           several years, leading talented engineers and designers to build
           products that people love. I am passionate about building
           high-performing and diverse teams, from interviewing to onboarding,
-          and from career development to team building.`;
+          and from career development to team building.`
 
 export default function Index() {
   return (
@@ -98,6 +99,7 @@ export default function Index() {
         </p>
       </div>
       <ContactMe />
+      <SillyThings />
     </Main>
-  );
+  )
 }
