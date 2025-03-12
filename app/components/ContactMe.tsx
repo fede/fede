@@ -9,7 +9,7 @@ export const ContactMe = () => {
         href="mailto:hello@federatier.com"
         className="text-sm md:text-xl underline mt-6 text-zinc-100 uppercase font-bold"
       >
-        hey@fede.work
+        hello@federatier.com
       </a>
     </div>
   );
