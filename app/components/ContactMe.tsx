@@ -6,7 +6,7 @@ export const ContactMe = () => {
       <TitleH2 className="pb-4">Contact me</TitleH2>
 
       <a
-        href="mailto:hey@fede.work"
+        href="mailto:hello@federatier.com"
         className="text-sm md:text-xl underline mt-6 text-zinc-100 uppercase font-bold"
       >
         hey@fede.work
