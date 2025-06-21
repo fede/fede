@@ -47,6 +47,9 @@ export default function Index() {
           </Link>
         </li>
       </ul>
+      <span className="text-sm leading-9">
+        contact <b>hello[at]federatier.com</b>
+      </span>
     </Main>
   )
 }
