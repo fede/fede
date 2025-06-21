@@ -1,6 +1,6 @@
 import { LoaderFunction } from '@remix-run/node'
 
-const SITE_URL = 'https://fede.work'
+const SITE_URL = 'https://federatier.com'
 
 const staticPages = [
   { path: '/', priority: 1.0 },

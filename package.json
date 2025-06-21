@@ -1,8 +1,8 @@
 {
-  "name": "fede.work",
+  "name": "federatier.com",
   "version": "1.0.0",
-  "description": "fede.work",
-  "author": "Federico Ratier <hey@fede.work>",
+  "description": "federatier.com",
+  "author": "Federico Ratier <hello@federatier.com>",
   "private": true,
   "sideEffects": false,
   "type": "module",
