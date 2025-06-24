@@ -52,6 +52,16 @@ export default function Index() {
               Experienced engineering manager and technical product lead. I
               strive helping teams find their purpose, become owners of their
               solutions and deliver value to customers, internal and external.
+              Both as product and at technical level.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Silo breaker, in my teams we have always build for reusability,
+              that way we can focus on what's important and have some extra time
+              to experiment new approaches.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Interested in complex problems that require creative solutions,
+              iterations and trying new things.
             </p>
             <p className="text-gray-700 leading-relaxed">
               I have a strong background in software engineering, with over 10
