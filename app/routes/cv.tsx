@@ -111,6 +111,15 @@ export default function Index() {
                       changes.
                     </li>
                     <li>
+                      Drafted the first version and co-authored the final
+                      version of what would become the Engineering Handbook. An
+                      onboarding guide for all developers to easily align and
+                      agree on the ways of working, api patterns, architecture
+                      and best practices. This played a mayor role in aligning
+                      the commercial development and operations in a single
+                      vision.
+                    </li>
+                    <li>
                       <b>Product owner</b> of a team building a react framework
                       that allows any other team in the company to build their
                       own app within, while having tests, monitoring, packaging,
