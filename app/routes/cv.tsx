@@ -107,17 +107,17 @@ export default function Index() {
                     <li>
                       Implemented cloud native solutions with <b>IaC</b> that
                       allows us to quickly recover from a disaster, prevent
-                      downtimes and increase traceability and security of our
-                      changes.
+                      downtimes and <b>increase traceability and security</b> of
+                      our changes.
                     </li>
                     <li>
-                      Drafted the first version and co-authored the final
-                      version of what would become the Engineering Handbook. An
-                      onboarding guide for all developers to easily align and
-                      agree on the ways of working, api patterns, architecture
-                      and best practices. This played a mayor role in aligning
-                      the commercial development and operations in a single
-                      vision.
+                      <b>Drafted</b> the first version and <b>co-authored</b>{' '}
+                      the final version of what would become the{' '}
+                      <b>Engineering Handbook</b>. An onboarding guide for all
+                      developers to easily align and agree on the ways of
+                      working, api patterns, architecture and best practices.
+                      This played a mayor role in aligning the commercial
+                      development and operations in a single vision.
                     </li>
                     <li>
                       <b>Product owner</b> of a team building a react framework
