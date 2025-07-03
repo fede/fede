@@ -17,7 +17,7 @@ function Header() {
     <div className="text-center mb-8 print:mb-4 p-4 bg-black print:bg-black text-white top-0 sticky print:relative">
       <h1 className="text-4xl font-bold mb-2">Federico Ratier</h1>
       <p className="text-xl  mb-4">
-        Engineering Manager • Product Lead • Solutions Architect
+        Engineering Manager • Tech & Product Lead • Solutions Architect
       </p>
 
       <div className="flex flex-wrap justify-center gap-4 text-sm">
@@ -81,7 +81,7 @@ export default function Index() {
                   <div className="flex justify-between items-start mb-3">
                     <div>
                       <h3 className="text-xl font-semibold text-gray-900">
-                        Engineering manager, Product lead, and Solutions
+                        Engineering manager, Tech & Product lead, and Solutions
                         architect
                       </h3>
                       <Badge className="bg-blue-900">
