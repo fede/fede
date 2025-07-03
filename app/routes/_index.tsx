@@ -17,7 +17,7 @@ export const meta: MetaFunction = () => {
 function HeaderTitle() {
   return (
     <>
-      <div>
+      <div className="max-w-[22rem]">
         <Link to="/cv" className="hover:underline" title="Federico Ratier CV">
           Engineering Manager, Tech & Product Lead
         </Link>{' '}
