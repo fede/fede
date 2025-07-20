@@ -22,10 +22,11 @@ const CompanyHeader = ({ name, position, date, badgeClasses }) => (
 
 export const meta = () => {
   return [
-    { title: "Fede Ratier" },
+    { title: "Federico Ratier CV" },
     {
       name: "description",
-      content: "Hi! I'm Fede, engineer manager and tech lead.",
+      content:
+        "Federico Ratier - Engineering Manager, Tech Lead, Product Lead, and Sound Engineer",
     },
   ];
 };

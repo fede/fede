@@ -1,11 +1,15 @@
 import { Welcome } from "../welcome/welcome";
 
-export function meta({}) {
+export const meta = () => {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Fede Ratier" },
+    {
+      name: "description",
+      content:
+        "Federico Ratier - Engineering Manager, Tech Lead, Product Lead, and Sound Engineer",
+    },
   ];
-}
+};
 
 export default function Home() {
   return <Welcome />;
