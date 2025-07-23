@@ -18,7 +18,7 @@ export function Welcome() {
                 Check my LinkedIn
               </button>
             </Link>
-            <Link asChild to="/cv">
+            <Link asChild to="/Federico_Ratier-CV.pdf">
               <button className="w-full my-2 cursor-pointer border border-emerald-200 text-emerald-100 px-8 py-3 rounded-lg font-medium hover:bg-emerald-200 hover:text-emerald-800 transition-colors">
                 My CV
               </button>
@@ -27,7 +27,7 @@ export function Welcome() {
           <p className="text-lg text-emerald-100 leading-relaxed">
             Want to contact me?{" "}
             <a
-              href="mailto:fede@example.com"
+              href="mailto:hello@federatier.com"
               className="text-emerald-200 hover:underline"
             >
               hello[at]federatier[dot]com
