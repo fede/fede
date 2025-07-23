@@ -18,7 +18,12 @@ export function Welcome() {
                 Check my LinkedIn
               </button>
             </Link>
-            <Link asChild to="/Federico_Ratier-CV.pdf">
+            <Link
+              asChild
+              to="/Federico_Ratier-CV.pdf"
+              discover="none"
+              reloadDocument
+            >
               <button className="w-full my-2 cursor-pointer border border-emerald-200 text-emerald-100 px-8 py-3 rounded-lg font-medium hover:bg-emerald-200 hover:text-emerald-800 transition-colors">
                 My CV
               </button>
