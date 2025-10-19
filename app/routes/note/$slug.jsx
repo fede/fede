@@ -1,6 +1,5 @@
-import { useLoaderData } from "react-router";
+import { useLoaderData, Link } from "react-router";
 import { getMDXNote } from "../../utils/mdx";
-import { Link } from "react-router";
 
 export async function loader({ params }) {
   const { slug } = params;
@@ -23,6 +22,8 @@ export default function NoteSlug() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <meta name="description" content={note.description} />
+      <title>{`${note.title} - Fede Ratier`}</title>
       <div className="flex justify-between font-sans items-center text-xs text-stone-600">
         <Link className="border rounded-md p-2 border-stone-600" to="/">
           &lt; Back home
