@@ -6,7 +6,7 @@ import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import { compile } from "@mdx-js/mdx";
 
-export interface MDXPost {
+export interface MDXNote {
   slug: string;
   title: string;
   updated?: string;
@@ -27,7 +27,7 @@ export async function getMDXFiles(): Promise<string[]> {
   }
 }
 
-export async function parseMDXFile(filename: string): Promise<MDXPost | null> {
+export async function parseMDXFile(filename: string): Promise<MDXNote | null> {
   const notesDir = path.join(process.cwd(), "content/notes");
   const filePath = path.join(notesDir, filename);
 
@@ -122,14 +122,14 @@ export async function compileMDXToJS(content: string): Promise<string> {
   }
 }
 
-export async function getMDXPost(slug: string): Promise<MDXPost | null> {
+export async function getMDXNote(slug: string): Promise<MDXNote | null> {
   const filename = `${slug}.mdx`;
   return await parseMDXFile(filename);
 }
 
-export async function getAllMDXPosts(): Promise<MDXPost[]> {
+export async function getAllMDXNotes(): Promise<MDXNote[]> {
   const files = await getMDXFiles();
-  const posts = await Promise.all(files.map((file) => parseMDXFile(file)));
+  const notes = await Promise.all(files.map((file) => parseMDXFile(file)));
 
-  return posts.filter((post): post is MDXPost => post !== null);
+  return notes.filter((note): note is MDXNote => note !== null);
 }

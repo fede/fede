@@ -1,9 +1,9 @@
-import { getAllMDXPosts } from "../utils/mdx";
+import { getAllMDXNotes } from "../utils/mdx";
 import { useLoaderData, Link } from "react-router";
 
 export async function loader() {
-  const posts = await getAllMDXPosts();
-  return { posts };
+  const notes = await getAllMDXNotes();
+  return { notes };
 }
 
 export const meta = () => {
@@ -18,13 +18,13 @@ export const meta = () => {
 };
 
 export default function Home() {
-  const { posts } = useLoaderData();
+  const { notes } = useLoaderData();
 
   return (
-    <div className="flex justify-center p-8 lg:p-16">
+    <div className="flex justify-center p-8">
       <div className="max-w-md space-y-6">
-        <div className="mb-10 m-auto w-56 h-60 bg-white p-3 shadow-lg shadow-stone-400 transform rotate-2 hover:rotate-0 transition-transform duration-300">
-          <div className="w-full h-48 bg-[url(/me.jpeg)] bg-cover bg-center"></div>
+        <div className="mb-10 m-auto w-72 h-96 bg-white p-3 shadow-lg shadow-stone-400 transform rotate-2 hover:rotate-0 transition-transform duration-300">
+          <div className="w-full h-78 bg-[url(/me.jpeg)] bg-cover bg-center"></div>
         </div>
         <h1>Fede Ratier</h1>
         <p className="text-lg text-stone-600 leading-relaxed">
@@ -55,17 +55,17 @@ export default function Home() {
         <h2 className="text-sm uppercase font-bold text-stone-600 pt-4">
           Notes
         </h2>
-        {posts && posts.length > 0 && (
+        {notes && notes.length > 0 && (
           <div className="space-y-2 text-stone-600 grid gap-2">
-            {posts.map((post) => (
-              <div className="" key={post.slug}>
-                <Link to={`/notes/${post.slug}`}>
-                  <h3 className="text-xl font-semibold">{post.title}</h3>
+            {notes.map((note) => (
+              <div className="" key={note.slug}>
+                <Link to={`/note/${note.slug}`}>
+                  <h3 className="text-xl font-semibold">{note.title}</h3>
                 </Link>
 
-                {post.updated && (
+                {note.updated && (
                   <p className="text-stone-600 text-xs">
-                    Last update: {post.updated} | {post.tag}
+                    Last update: {note.updated} | {note.tag}
                   </p>
                 )}
               </div>

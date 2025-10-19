@@ -1,25 +1,25 @@
 import { useLoaderData } from "react-router";
-import { getMDXPost } from "../../utils/mdx";
+import { getMDXNote } from "../../utils/mdx";
 import { Link } from "react-router";
 
 export async function loader({ params }) {
   const { slug } = params;
 
   if (!slug) {
-    throw new Response("Post not found", { status: 404 });
+    throw new Response("Note not found", { status: 404 });
   }
 
-  const post = await getMDXPost(slug);
+  const note = await getMDXNote(slug);
 
-  if (!post) {
-    throw new Response("Post not found", { status: 404 });
+  if (!note) {
+    throw new Response("Note not found", { status: 404 });
   }
 
-  return { post };
+  return { note };
 }
 
 export default function NoteSlug() {
-  const { post } = useLoaderData();
+  const { note } = useLoaderData();
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
@@ -29,7 +29,7 @@ export default function NoteSlug() {
         </Link>
         <time>
           Last update:{" "}
-          {new Date(post.updated).toLocaleDateString("en-US", {
+          {new Date(note.updated).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
             day: "numeric",
@@ -40,7 +40,7 @@ export default function NoteSlug() {
         <div
           className="prose-content"
           dangerouslySetInnerHTML={{
-            __html: post.compiledSource || post.content,
+            __html: note.compiledSource || note.content,
           }}
         />
       </article>
