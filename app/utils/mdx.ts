@@ -9,8 +9,8 @@ import { compile } from "@mdx-js/mdx";
 export interface MDXPost {
   slug: string;
   title: string;
-  date?: string;
-  tags?: string[];
+  updated?: string;
+  tag?: string[];
   content: string;
   compiledSource?: string;
   frontmatter?: Record<string, any>;
@@ -72,8 +72,8 @@ export async function parseMDXFile(filename: string): Promise<MDXPost | null> {
     return {
       slug,
       title: frontmatter.title || slug,
-      date: frontmatter.date,
-      tags: frontmatter.tags,
+      updated: frontmatter.updated,
+      tag: frontmatter.tag,
       content,
       compiledSource,
       frontmatter,
