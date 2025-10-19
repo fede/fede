@@ -24,8 +24,11 @@ export default function NoteSlug() {
     <div className="max-w-4xl mx-auto px-4 py-8">
       <meta name="description" content={note.description} />
       <title>{`${note.title} - Fede Ratier`}</title>
-      <div className="flex justify-between font-sans items-center text-xs text-stone-600">
-        <Link className="border rounded-md p-2 border-stone-600" to="/">
+      <div className="flex justify-between font-sans items-center text-xs">
+        <Link
+          className="border rounded-md p-2 border-stone-600 dark:border-stone-300"
+          to="/"
+        >
           &lt; Back home
         </Link>
         <time>

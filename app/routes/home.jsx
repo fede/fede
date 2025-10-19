@@ -23,40 +23,35 @@ export default function Home() {
   return (
     <div className="flex justify-center p-8">
       <div className="max-w-md space-y-6">
-        <div className="mb-10 m-auto w-72 h-96 bg-white p-3 shadow-lg shadow-stone-400 transform rotate-2 hover:rotate-0 transition-transform duration-300">
+        <div className="mb-10 m-auto w-72 h-96 bg-white p-3 shadow-lg shadow-stone-400 dark:shadow-stone-800 transform rotate-2 hover:rotate-0 transition-transform duration-300">
           <div className="w-full h-78 bg-[url(/me.jpeg)] bg-cover bg-center"></div>
         </div>
         <h1>Fede Ratier</h1>
-        <p className="text-lg text-stone-600 leading-relaxed">
+        <p className="text-lg leading-relaxed">
           Jumping between engineering manager, tech lead and product lead doing
           sound engineering by night.
         </p>
         <div className="flex space-x-4">
           <Link
-            className="underline text-stone-700 py-2"
+            className="underline py-2"
             to="https://www.linkedin.com/in/federatier/"
           >
             LinkedIn
           </Link>
-          <Link
-            className="underline text-stone-700 py-2"
-            to="https://github.com/fede"
-          >
+          <Link className="underline py-2" to="https://github.com/fede">
             Github
           </Link>
         </div>
-        <p className="text-lg text-stone-600 leading-relaxed">
+        <p className="text-lg leading-relaxed">
           Want to contact me?{" "}
           <a href="mailto:hello@federatier.com" className="hover:underline">
             hello@federatier.com
           </a>
         </p>
 
-        <h2 className="text-sm uppercase font-bold text-stone-600 pt-4">
-          Notes
-        </h2>
+        <h2 className="text-sm uppercase font-bold pt-4">Notes</h2>
         {notes && notes.length > 0 && (
-          <div className="space-y-2 text-stone-600 grid gap-2">
+          <div className="space-y-2 grid gap-2">
             {notes.map((note) => (
               <div className="" key={note.slug}>
                 <Link to={`/note/${note.slug}`}>
@@ -64,7 +59,7 @@ export default function Home() {
                 </Link>
 
                 {note.updated && (
-                  <p className="text-stone-600 text-xs">
+                  <p className="text-xs">
                     Last update: {note.updated} | {note.tag}
                   </p>
                 )}

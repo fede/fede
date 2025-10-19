@@ -2,7 +2,7 @@ import { Mail, MapPin, Linkedin } from "lucide-react";
 
 const Badge = ({ children, className }) => (
   <span
-    className={`inline-flex items-center justify-center px-2 py-1 text-xs font-semibold ${className}`}
+    className={`inline-flex items-center justify-center !px-2 !py-1 text-xs font-semibold ${className}`}
   >
     {children}
   </span>
@@ -12,7 +12,7 @@ const CompanyHeader = ({ name, position, date, badgeClasses }) => (
   <div className="flex justify-between items-start mb-3">
     <div className="flex flex-cols gap-2">
       <Badge className={badgeClasses}>{name}</Badge>
-      <h3 className="text-xl font-semibold text-gray-900">{position}</h3>
+      <h3 className="text-xl font-semibold !text-gray-900 !mt-1">{position}</h3>
     </div>
     <span className="text-gray-500 font-medium whitespace-nowrap leading-7">
       {date}
@@ -59,12 +59,12 @@ function Header() {
 
 export default function Index() {
   return (
-    <>
+    <div className="!font-sans !text-gray-900 !bg-white">
       <Header />
-      <div className="print:ml-4 print:mr-4">
+      <div className="print:ml-4 print:mr-4 ">
         <div className="container mx-auto max-w-4xl p-6">
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold !text-gray-900 mb-4">
               Professional Summary
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -94,7 +94,7 @@ export default function Index() {
             </p>
           </section>
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold !text-gray-900 mb-6">
               Selected work Experience
             </h2>
 
@@ -263,14 +263,14 @@ export default function Index() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold !text-gray-900 mb-4">
               Other experiences
             </h2>
 
             <div className="flex justify-between items-start mb-2">
-              <h3 className="font-semibold text-gray-900">
+              <h3 className="font-semibold !text-gray-900">
                 CTO & Founding Engineer -{" "}
-                <span className="text-gray-500 font-normal">YaSports</span>
+                <span className="!text-gray-500 font-normal">YaSports</span>
                 <div className="font-normal text-sm">
                   Built a video on-demand platform for sports archive focused on
                   mobile devices. Worked together with Akamai to optimize HLS
@@ -278,14 +278,14 @@ export default function Index() {
                   of developers and user testing. Acquired by a telecom company.
                 </div>
               </h3>
-              <p className="text-gray-600 whitespace-nowrap">2016 - 2017</p>
+              <p className="!text-gray-600 whitespace-nowrap">2016 - 2017</p>
             </div>
 
             <div className="">
               <div className="flex justify-between items-start mb-2">
-                <h3 className="font-semibold text-gray-900">
+                <h3 className="font-semibold !text-gray-900">
                   CTO & Co-Founder -{" "}
-                  <span className="text-gray-500 font-normal">Cinemad.Tv</span>
+                  <span className="!text-gray-500 font-normal">Cinemad.Tv</span>
                   <div className="font-normal text-sm">
                     Built from scratch an interactive video ads platform.
                     Pitched for investment and secured funding. Interviewed,
@@ -297,7 +297,7 @@ export default function Index() {
               </div>
 
               <div className="flex justify-between items-start mb-2">
-                <h3 className="font-semibold text-gray-900">
+                <h3 className="font-semibold !text-gray-900">
                   Fullstack developer -{" "}
                   <span className="text-gray-500 font-normal">
                     Buenos Aires city government
@@ -310,7 +310,7 @@ export default function Index() {
               </div>
 
               <div className="flex justify-between items-start mb-2">
-                <h3 className="font-semibold text-gray-900">
+                <h3 className="font-semibold !text-gray-900">
                   Fullstack developer -{" "}
                   <span className="text-gray-500 font-normal">
                     Grupo Extremo Sur
@@ -325,11 +325,13 @@ export default function Index() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">Education</h2>
+            <h2 className="text-2xl font-bold !text-gray-900 mb-3">
+              Education
+            </h2>
 
             <div className="flex justify-between items-start mb-2">
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold !text-gray-900">
                   Telecommunications Engineering
                 </h3>
                 <p className="text-md text-neutral-500 font-normal">
@@ -343,6 +345,6 @@ export default function Index() {
           </section>
         </div>
       </div>
-    </>
+    </div>
   );
 }
