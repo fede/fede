@@ -28,8 +28,7 @@ export default function Home() {
         </div>
         <h1>Fede Ratier</h1>
         <p className="text-lg leading-relaxed">
-          Jumping between engineering manager, tech lead and product lead doing
-          sound engineering by night.
+          Jumping between engineering manager, tech lead and product owner.
         </p>
         <div className="flex space-x-4">
           <Link

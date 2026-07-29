@@ -10,6 +10,6 @@ const files = fs
 export default {
   ssr: true,
   async prerender() {
-    return ["/", "/cv", ...files.map((slug) => `/note/${slug}`)];
+    return ["/", ...files.map((slug) => `/note/${slug}`)];
   },
 } satisfies Config;
